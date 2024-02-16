@@ -1,8 +1,10 @@
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 export ZSH="$HOME/.oh-my-zsh"
+
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=( 
@@ -37,9 +39,10 @@ alias flcl="flatpak uninstall --unused"
 alias startemu="cd Android/Sdk/emulator && ./emulator -avd Pixel_3a_API_33_x86_64"
 
 export PATH="$PATH:/home/smruti/flutter-dev/flutter/bin"
-
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 tmux source-file ~/.tmux.conf
 #tmux new-session -s smruti tmux at -t smruti
 # Set GTK theme
 export GTK_THEME=Everforest-Dark-BL-MOD
+
 clear
